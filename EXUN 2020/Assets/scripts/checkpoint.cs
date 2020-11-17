@@ -8,7 +8,8 @@ public class checkpoint : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            collider.GetComponent<playerRespawn>().addNewCheckpoint(this);
+            Vector2 pos = new Vector2(transform.position.x, transform.position.y);
+            collider.GetComponent<playerRespawn>().addNewCheckpoint(pos);
         }
     }
 }
