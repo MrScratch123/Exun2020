@@ -13,7 +13,7 @@ public class music_on_and_off : MonoBehaviour
     {
         musicPlayer = FindObjectOfType<singleton>();
         isMusicPlaying = musicPlayer.enabled;
-        musicStrikeThrough.SetActive(isMusicPlaying);
+        musicStrikeThrough.SetActive(!isMusicPlaying);
     }
     public void toggleMusic()
     {
