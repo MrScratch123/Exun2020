@@ -16,7 +16,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.3
+    m_Value: 0.25
     min: -1
     max: 1
   xMultiplier:
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.05
     min: 0
     max: 1
 --- !u!114 &11400000
@@ -146,7 +146,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.386
+    m_Value: 0.409
     min: 0
     max: 1
   smoothness:

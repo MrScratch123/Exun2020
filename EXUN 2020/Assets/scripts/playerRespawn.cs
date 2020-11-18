@@ -12,7 +12,7 @@ public class playerRespawn : MonoBehaviour
 
     private void Start()
     {
-        lastCheckpoint = new Vector2(PlayerPrefs.GetFloat("xPos", 0) + 2, PlayerPrefs.GetFloat("yPos", 0));
+        lastCheckpoint = new Vector2(PlayerPrefs.GetFloat("xPos", 0) , PlayerPrefs.GetFloat("yPos", 0));
         transform.position = lastCheckpoint;
         List<Vector2> allCheckPointsPos = new List<Vector2>();
         foreach (checkpoint checkpoint in allCheckPoints)
@@ -20,7 +20,7 @@ public class playerRespawn : MonoBehaviour
             Vector2 posToAdd = new Vector2(checkpoint.transform.position.x, checkpoint.transform.position.y);
             allCheckPointsPos.Add(posToAdd);
         }
-        var lastSavedCheckPoint = new Vector2(lastCheckpoint.x - 2, lastCheckpoint.y);
+        var lastSavedCheckPoint = new Vector2(lastCheckpoint.x, lastCheckpoint.y);
         for (int i = 0; i <= allCheckPointsPos.IndexOf(lastSavedCheckPoint); i = i + 1)
         {
             checkpointsList.Add(allCheckPointsPos[i]);
@@ -40,6 +40,7 @@ public class playerRespawn : MonoBehaviour
     {
         if (checkpointsList.Contains(checkpoint) == false)
         {
+            GetComponent<soundEffects>().playAudio(sfx.checkpoint);
             checkpointsList.Add(checkpoint);
             lastCheckpoint = checkpoint;
             PlayerPrefs.SetFloat("xPos", lastCheckpoint.x);
@@ -51,6 +52,7 @@ public class playerRespawn : MonoBehaviour
 
     public void respawn()
     {
+        GetComponent<soundEffects>().playAudio(sfx.hit);
         transform.position = new Vector3(lastCheckpoint.x, lastCheckpoint.y, 0f);
     }
 

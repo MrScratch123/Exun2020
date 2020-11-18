@@ -24,8 +24,9 @@ public class playerMovement : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && controller.m_JumpForce > 0)
         {
+            GetComponent<soundEffects>().playAudio(sfx.jump);
             jump = true;
         }
 
