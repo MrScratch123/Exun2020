@@ -3940,7 +3940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2748365247591077525, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: m_JumpForce
-      value: 0
+      value: 119.2
       objectReference: {fileID: 0}
     - target: {fileID: 2748365247591077526, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: m_LocalPosition.x
