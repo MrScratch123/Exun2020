@@ -7,24 +7,23 @@ public class playerRespawn : MonoBehaviour
     Vector2 lastCheckpoint;
     [SerializeField] Canvas checkpointCanvas;
     List<Vector2> checkpointsList = new List<Vector2>();
-    List<Vector2> allCheckPoints = new List<Vector2>();
+    [SerializeField] List<checkpoint> allCheckPoints = new List<checkpoint>();
 
 
     private void Start()
     {
         lastCheckpoint = new Vector2(PlayerPrefs.GetFloat("xPos", 0) + 2, PlayerPrefs.GetFloat("yPos", 0));
         transform.position = lastCheckpoint;
-        var checkPointsArray = FindObjectsOfType<checkpoint>();
-        foreach(checkpoint checkpoint in checkPointsArray)
+        List<Vector2> allCheckPointsPos = new List<Vector2>();
+        foreach (checkpoint checkpoint in allCheckPoints)
         {
             Vector2 posToAdd = new Vector2(checkpoint.transform.position.x, checkpoint.transform.position.y);
-            allCheckPoints.Add(posToAdd);
+            allCheckPointsPos.Add(posToAdd);
         }
-        allCheckPoints.Reverse();
         var lastSavedCheckPoint = new Vector2(lastCheckpoint.x - 2, lastCheckpoint.y);
-        for(int i = 0; i <= allCheckPoints.IndexOf(lastSavedCheckPoint); i = i + 1)
+        for (int i = 0; i <= allCheckPointsPos.IndexOf(lastSavedCheckPoint); i = i + 1)
         {
-            checkpointsList.Add(allCheckPoints[i]);
+            checkpointsList.Add(allCheckPointsPos[i]);
         }
         print(checkpointsList.Count);
     }
