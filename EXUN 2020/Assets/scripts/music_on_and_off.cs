@@ -5,12 +5,20 @@ using UnityEngine;
 public class music_on_and_off : MonoBehaviour
 {
     bool isMusicPlaying = true;
-    [SerializeField] GameObject musicPlayer;
+    singleton musicPlayer;
     [SerializeField] GameObject musicStrikeThrough;
 
+
+    void Start()
+    {
+        musicPlayer = FindObjectOfType<singleton>();
+        isMusicPlaying = musicPlayer.enabled;
+        musicStrikeThrough.SetActive(isMusicPlaying);
+    }
     public void toggleMusic()
     {
-        if(isMusicPlaying)
+        musicPlayer = FindObjectOfType<singleton>();
+        if (isMusicPlaying)
         {
             isMusicPlaying = false;
             musicPlayer.GetComponent<AudioSource>().enabled = false;
