@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class playButton : MonoBehaviour
 {
-
+    
     public void play()
     {
-        SceneManager.LoadScene(1);
+        int sceneToLoad = PlayerPrefs.GetInt("savedScene", 1);
+        print(sceneToLoad);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
