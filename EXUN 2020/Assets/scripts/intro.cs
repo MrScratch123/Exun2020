@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class intro : MonoBehaviour
 {
@@ -19,7 +20,16 @@ public class intro : MonoBehaviour
         }
         else
         {
-            FindObjectOfType<loadMenu>().gameObject.GetComponent<Animator>().SetTrigger("boom");
+            if (SceneManager.GetActiveScene().buildIndex == 0)
+            {
+                FindObjectOfType<loadMenu>().gameObject.GetComponent<Animator>().SetTrigger("boom");
+            }
+
+            if(SceneManager.GetActiveScene().buildIndex == 6)
+            {
+                print("bye bye");
+                Application.Quit();
+            }
         }
     }
 }

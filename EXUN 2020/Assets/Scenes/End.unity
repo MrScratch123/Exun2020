@@ -754,7 +754,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 181, y: -421}
+  m_AnchoredPosition: {x: 181, y: -1394}
   m_SizeDelta: {x: 1919.9995, y: 1707.5571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1007089973
@@ -777,18 +777,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Humpty Dumpty sat on the wall\r\nHumpty dumpty had a great fall.\r\nBut
-    instead of shattering \r\nHe got a feeling quite flattering \r\nReaching a new
-    world far afar \r\nPoor egg got his limbs torn apart \r\nNow he's in stress \r\nOh
-    boy, this is a real mess! \r\n\r\n\r\nHumpty on a renaissance\r\nNeeds to get
-    his limbs\r\nThe only way to do that \r\nIs to get the mystical drinks (potions)\r\nAt
-    the end of every level \r\nOne potion is present \r\nThat regenerates his limbs
-    \r\nAnd makes him more pleasant\r\n\r\nWhen you don't have any limbs \r\nYou
-    shall use the trampoline \r\nAs you get more and more limbs \r\nYou shall leap
-    higher joyfully\r\n\r\nWorried about Game Save? \r\nDont worry, it occurs at
-    the checkpoint \r\nSo you can safely exit \r\nAnd not enter the dreadful rage
-    vex time \r\nWell I guess I told you all \r\nHope you are clear\r\nExperts Unlimited,
-    \r\nIts time to persevere"
+  m_text: "Humpty Dumpty finally retrieves his limbs \r\nHumpty Dumpty now jigs and
+    grins \r\nNow that he is back in his world \r\nExperts Unlimited, \r\nYou have
+    elegantly served.\n\nCredits -\r\nArt work made by Laksh Saini\r\nLevels made
+    by Vihaan Dhaka\r\nVFX, SFX, music and making the game functional by Aarush Mithal\r\nThanks
+    for playing :D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -879,7 +872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.5
   start: -13
-  stop: 14
+  stop: 5
 --- !u!1001 &1169573903
 PrefabInstance:
   m_ObjectHideFlags: 0
