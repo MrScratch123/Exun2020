@@ -458,6 +458,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9f970a6cbf14f7439654bc536808d57, type: 3}
+--- !u!114 &310037578 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4567962263122080856, guid: f9f970a6cbf14f7439654bc536808d57, type: 3}
+  m_PrefabInstance: {fileID: 310037577}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9151a9a5da28c647bfd19cf6111c038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &381838947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3407,6 +3418,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9f970a6cbf14f7439654bc536808d57, type: 3}
+--- !u!114 &2011143173 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4567962263122080856, guid: f9f970a6cbf14f7439654bc536808d57, type: 3}
+  m_PrefabInstance: {fileID: 2011143172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9151a9a5da28c647bfd19cf6111c038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2012174186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3647,7 +3669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2748365247591077528, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: allCheckPoints.Array.size
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2748365247591077528, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: checkpointCanvas
@@ -3656,11 +3678,11 @@ PrefabInstance:
     - target: {fileID: 2748365247591077528, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: allCheckPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2011143173}
     - target: {fileID: 2748365247591077528, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: allCheckPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 310037578}
     - target: {fileID: 2748365247591077528, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: allCheckPoints.Array.data[2]
       value: 

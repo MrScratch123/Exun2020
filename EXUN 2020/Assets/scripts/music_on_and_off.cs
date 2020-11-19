@@ -15,6 +15,10 @@ public class music_on_and_off : MonoBehaviour
         isMusicPlaying = musicPlayer.enabled;
         musicStrikeThrough.SetActive(!isMusicPlaying);
     }
+    private void Update()
+    {
+        musicStrikeThrough.SetActive(!isMusicPlaying);
+    }
     public void toggleMusic()
     {
         musicPlayer = FindObjectOfType<singleton>();
@@ -22,13 +26,13 @@ public class music_on_and_off : MonoBehaviour
         {
             isMusicPlaying = false;
             musicPlayer.GetComponent<AudioSource>().enabled = false;
-            musicStrikeThrough.SetActive(true);
+
         }
         else if(isMusicPlaying == false)
         {
             isMusicPlaying = true;
             musicPlayer.GetComponent<AudioSource>().enabled = true;
-            musicStrikeThrough.SetActive(false);
+
         }
     }
     

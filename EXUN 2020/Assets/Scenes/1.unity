@@ -4043,6 +4043,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2748365247591077527, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2748365247591077528, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: checkpointCanvas
       value: 
@@ -4063,6 +4067,10 @@ PrefabInstance:
       propertyPath: allCheckPoints.Array.data[3]
       value: 
       objectReference: {fileID: 1265217187}
+    - target: {fileID: 2748365247591077528, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
 --- !u!1001 &3898351240659127784
