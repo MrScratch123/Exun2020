@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4916fbc6fc80ed48bd130a014220d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 0
+  m_JumpForce: 251.95
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2748365247591077521}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54b990d308e6cfb4bb87d3dd56a4fad9, type: 3}
   m_Name: 
@@ -139,15 +139,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2748365247591077521}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0af48bbd9e8f13449f89808250c052b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   checkpointCanvas: {fileID: 0}
   allCheckPoints:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
 --- !u!82 &906021704
