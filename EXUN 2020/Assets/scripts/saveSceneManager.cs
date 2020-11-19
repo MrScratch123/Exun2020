@@ -7,6 +7,7 @@ public class saveSceneManager : MonoBehaviour
 {
     void Update()
     {
+        // the real saving shtuff happenes in playRespawn
         PlayerPrefs.SetInt("savedScene", SceneManager.GetActiveScene().buildIndex);
     }
 }
