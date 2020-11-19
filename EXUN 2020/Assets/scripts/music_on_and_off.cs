@@ -17,6 +17,7 @@ public class music_on_and_off : MonoBehaviour
     }
     private void Update()
     {
+        isMusicPlaying = musicPlayer.enabled;
         musicStrikeThrough.SetActive(!isMusicPlaying);
     }
     public void toggleMusic()
