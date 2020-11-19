@@ -8,8 +8,12 @@ public class playButton : MonoBehaviour
     
     public void play()
     {
-        int sceneToLoad = PlayerPrefs.GetInt("savedScene", 1);
-        print(sceneToLoad);
+        int sceneToLoad = PlayerPrefs.GetInt("savedScene", 2);
+        SceneManager.LoadScene(sceneToLoad);
+    }
+    public void rePlay()
+    {
+        int sceneToLoad = 0;
         SceneManager.LoadScene(sceneToLoad);
     }
 }

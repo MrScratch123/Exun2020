@@ -8,17 +8,12 @@ public class music_on_and_off : MonoBehaviour
     singleton musicPlayer;
     [SerializeField] GameObject musicStrikeThrough;
 
-
-    void Start()
-    {
-        musicPlayer = FindObjectOfType<singleton>();
-        isMusicPlaying = musicPlayer.enabled;
-        musicStrikeThrough.SetActive(!isMusicPlaying);
-    }
     private void Update()
     {
-        isMusicPlaying = musicPlayer.enabled;
+        musicPlayer = FindObjectOfType<singleton>();
+        isMusicPlaying = musicPlayer.GetComponent<AudioSource>().enabled;
         musicStrikeThrough.SetActive(!isMusicPlaying);
+
     }
     public void toggleMusic()
     {
@@ -26,14 +21,14 @@ public class music_on_and_off : MonoBehaviour
         if (isMusicPlaying)
         {
             isMusicPlaying = false;
-            musicPlayer.GetComponent<AudioSource>().enabled = false;
-
+            musicPlayer.gameObject.GetComponent<AudioSource>().enabled = false;
+            isMusicPlaying = musicPlayer.GetComponent<AudioSource>().enabled;
         }
         else if(isMusicPlaying == false)
         {
             isMusicPlaying = true;
-            musicPlayer.GetComponent<AudioSource>().enabled = true;
-
+            musicPlayer.gameObject.GetComponent<AudioSource>().enabled = true;
+            isMusicPlaying = musicPlayer.GetComponent<AudioSource>().enabled;
         }
     }
     

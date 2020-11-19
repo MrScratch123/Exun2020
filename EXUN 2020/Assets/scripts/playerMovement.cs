@@ -26,7 +26,6 @@ public class playerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && controller.m_JumpForce > 0)
         {
-            GetComponent<soundEffects>().playAudio(sfx.jump);
             jump = true;
         }
 
