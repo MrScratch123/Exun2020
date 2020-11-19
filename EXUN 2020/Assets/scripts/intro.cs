@@ -27,8 +27,12 @@ public class intro : MonoBehaviour
 
             if(SceneManager.GetActiveScene().buildIndex == 6)
             {
+                PlayerPrefs.SetInt("xPos", 0);
+                PlayerPrefs.SetInt("yPos", 0);
+                PlayerPrefs.SetInt("savedScene", 2);
                 print("bye bye");
                 Application.Quit();
+
             }
         }
     }
