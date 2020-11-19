@@ -4799,6 +4799,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 2748365247591077524, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.16927612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748365247591077524, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
+      propertyPath: m_Size.y
+      value: 2.1078103
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748365247591077524, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.108713716
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748365247591077524, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3008411
+      objectReference: {fileID: 0}
     - target: {fileID: 2748365247591077525, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: m_JumpForce
       value: 750
@@ -4890,6 +4906,22 @@ PrefabInstance:
     - target: {fileID: 2748365247591077528, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: allCheckPoints.Array.data[8]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748365247629672036, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748365247629672036, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748365247711740567, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748365247711740567, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 2748365248616554053, guid: 0d428811b4c5f44428a8c543840c6a0d, type: 3}
       propertyPath: m_Sprite
